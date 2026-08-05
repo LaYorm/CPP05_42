@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 15:39:27 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/05 10:49:48 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/05 15:53:28 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,11 @@ int	main()
 		std::cout << Valid_name;
 		Bureaucrat Valid_grade(1);
 		std::cout << Valid_grade;
-		Bureaucrat Valide_both("Josianne", 149);
+		Bureaucrat Valide_both("Josianne", 140);
 		std::cout << Valide_both;
-		Bureaucrat Invalid("Gaston", -5);
+		Bureaucrat copy(Valide_both);
+		std::cout << copy;
+		// Bureaucrat Invalid("Gaston", -5);
 	}
 	catch (std::exception &e)
 	{	

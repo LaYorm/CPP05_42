@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 15:39:31 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/05 14:44:35 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/05 15:55:09 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,10 +54,9 @@ Bureaucrat::~Bureaucrat()
 	return ;
 }
 
-Bureaucrat::Bureaucrat(Bureaucrat const &copy)
+Bureaucrat::Bureaucrat(Bureaucrat const &copy): _name(copy.getName()), _grade(copy.getGrade())
 {
 	std::cout << "Bureaucrat Copy Constructor Called\n";
-	*this = copy;
 	return ;
 }
 
