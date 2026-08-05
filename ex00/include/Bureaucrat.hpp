@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 15:39:33 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/05 10:05:40 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/05 14:44:07 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Bureaucrat
 		Bureaucrat(std::string name, int grade);
 
 
-		const std::string	getName()const;
+		std::string	getName()const;
 		int	getGrade()const;
 		void	incrementGrade();
 		void	decrementGrade();

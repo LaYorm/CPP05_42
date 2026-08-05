@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 15:39:31 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/05 10:19:40 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/05 14:44:35 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ std::ostream	&operator<<(std::ostream &o, Bureaucrat const &other)
 	return (o);
 }
 
-const std::string	Bureaucrat::getName()const
+std::string	Bureaucrat::getName()const
 {
 	return (this->_name);
 }
