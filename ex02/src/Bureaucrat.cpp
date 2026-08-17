@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 15:39:31 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/14 11:38:48 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/17 16:04:43 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,18 +110,32 @@ void	Bureaucrat::signForm(AForm &form)
 	}
 	catch(const std::exception& e)
 	{
-		std::cerr << this->getName() << " couldn't sign " << form.getName() << " because " << e.what();
+		std::cerr << this->getName() << " couldn't sign " << form.getName() << " because:" << e.what();
 		return ;
 	}
 	std::cout << this->getName() << " sign " << form.getName() << std::endl;
 }
 
+void	Bureaucrat::executeForm(AForm const &form)const
+{
+	try
+	{
+		form.execute(*this);
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << this->getName() << " couldn't execute " << form.getName() << " because:" << e.what();
+		return ;
+	}
+	std::cout << this->_name << " executed " << form.getName() << std::endl;
+}
+
 const char	*Bureaucrat::GradeTooHighException::what() const throw()
 {
-	return ("Grade too High !\n");
+	return (" Grade too High !\n");
 }
 
 const char	*Bureaucrat::GradeTooLowException::what() const throw()
 {
-	return ("Grade too Low !\n");
+	return (" Grade too Low !\n");
 }

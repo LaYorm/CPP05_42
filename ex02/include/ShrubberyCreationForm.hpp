@@ -6,14 +6,13 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/14 14:29:37 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 12:18:17 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/17 15:28:41 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SHRUBBERYCREATIONFORM_HPP
 # define SHRUBBERYCREATIONFORM_HPP
 
-#include <iostream>
 #include <fstream>
 
 #include "AForm.hpp"

@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 15:39:33 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 15:06:39 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/17 16:04:38 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ class Bureaucrat
 		void		incrementGrade();
 		void		decrementGrade();
 		void		signForm(AForm &form);
+		void 		executeForm(AForm const & form)const;
 
 		class GradeTooHighException : public std::exception
 		{

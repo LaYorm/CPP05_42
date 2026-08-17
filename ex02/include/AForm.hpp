@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 11:11:59 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 12:15:27 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/17 16:43:44 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class AForm
 		virtual void		execute_action()const = 0;
 	public:
 		AForm();
-		~AForm();
+		virtual ~AForm();
 		AForm(std::string name);
 		AForm(int gradeSign, int gradeExec);
 		AForm(std::string name, int gradeSign, int gradeExec);

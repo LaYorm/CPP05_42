@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/17 10:45:16 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 15:19:15 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/17 15:25:25 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ RobotomyRequestForm	&RobotomyRequestForm::operator=(const RobotomyRequestForm &o
 
 void	RobotomyRequestForm::execute_action()const
 {
-	srand(time(0));
 	int	random_n = rand();
 	if (random_n % 2)
 		std::cout << "Zzz Zzzzz Zzzz :" << this->_target << " has been robotomized successfully!!\n";

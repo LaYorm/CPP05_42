@@ -6,14 +6,13 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/14 14:28:52 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 15:07:47 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/17 15:28:52 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ROBOTFORM_HPP
 # define ROBOTFORM_HPP
 
-#include <iostream>
 #include <cstdlib>
 #include <time.h>
 
