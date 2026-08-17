@@ -6,12 +6,12 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 15:39:31 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/05 16:36:58 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/14 11:38:48 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Bureaucrat.hpp"
-#include "../include/Form.hpp"
+#include "../include/AForm.hpp"
 
 Bureaucrat::Bureaucrat(): _name("Default"), _grade(150)
 {
@@ -102,7 +102,7 @@ void	Bureaucrat::decrementGrade()
 	return ;
 }
 
-void	Bureaucrat::signForm(Form &form)
+void	Bureaucrat::signForm(AForm &form)
 {
 	try
 	{

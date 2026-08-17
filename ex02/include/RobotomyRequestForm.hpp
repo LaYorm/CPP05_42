@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/04 15:39:27 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 12:47:58 by yorimek          ###   ########.fr       */
+/*   Created: 2026/08/14 14:28:52 by yorimek           #+#    #+#             */
+/*   Updated: 2026/08/14 14:35:42 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Bureaucrat.hpp"
-#include "../include/AForm.hpp"
-#include "../include/ShrubberyCreationForm.hpp"
+#ifndef ROBOTFORM_HPP
+# define ROBOTFORM_HPP
 
-int	main()
+class RobotomyRequestForm
 {
-	ShrubberyCreationForm	Schrub("test");
-	ShrubberyCreationForm	Schrub4("test4");
-	Bureaucrat				bur("jean", 14);
+	private:
+		/* data */
+	public:
+		RobotomyRequestForm(/* args */);
+		~RobotomyRequestForm();
+};
 
-	bur.signForm(Schrub);
-	bur.signForm(Schrub4);
-	Schrub.execute(bur);
-	Schrub4.execute(bur);
-}
+#endif

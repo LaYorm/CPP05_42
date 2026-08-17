@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   PresidentialPardonForm.hpp                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/04 15:39:27 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 12:47:58 by yorimek          ###   ########.fr       */
+/*   Created: 2026/08/14 14:00:54 by yorimek           #+#    #+#             */
+/*   Updated: 2026/08/14 14:30:38 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Bureaucrat.hpp"
-#include "../include/AForm.hpp"
-#include "../include/ShrubberyCreationForm.hpp"
+#ifndef PRESIDENTIALFORM_HPP
+# define PRESIDENTIALFORM_HPP
 
-int	main()
+class PresidentialPardonForm
 {
-	ShrubberyCreationForm	Schrub("test");
-	ShrubberyCreationForm	Schrub4("test4");
-	Bureaucrat				bur("jean", 14);
+	private:
+		/* data */
+	public:
+		PresidentialPardonForm(/* args */);
+		~PresidentialPardonForm();
+};
 
-	bur.signForm(Schrub);
-	bur.signForm(Schrub4);
-	Schrub.execute(bur);
-	Schrub4.execute(bur);
-}
+#endif
