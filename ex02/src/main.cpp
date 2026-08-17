@@ -6,22 +6,20 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 15:39:27 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 12:47:58 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/17 15:19:49 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Bureaucrat.hpp"
 #include "../include/AForm.hpp"
 #include "../include/ShrubberyCreationForm.hpp"
+#include "../include/RobotomyRequestForm.hpp"
 
 int	main()
 {
-	ShrubberyCreationForm	Schrub("test");
-	ShrubberyCreationForm	Schrub4("test4");
-	Bureaucrat				bur("jean", 14);
+	Bureaucrat bur(1);
+	RobotomyRequestForm  Robot("Buzz");
 
-	bur.signForm(Schrub);
-	bur.signForm(Schrub4);
-	Schrub.execute(bur);
-	Schrub4.execute(bur);
+	bur.signForm(Robot);
+	Robot.execute(bur);
 }

@@ -6,20 +6,38 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/14 14:28:52 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/14 14:35:42 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/17 15:07:47 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ROBOTFORM_HPP
 # define ROBOTFORM_HPP
 
-class RobotomyRequestForm
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+#include "AForm.hpp"
+
+class RobotomyRequestForm: public AForm
 {
 	private:
-		/* data */
+		std::string	_target;
 	public:
-		RobotomyRequestForm(/* args */);
+		RobotomyRequestForm();
 		~RobotomyRequestForm();
+		RobotomyRequestForm(std::string target);
+		RobotomyRequestForm(const RobotomyRequestForm &copy);
+		RobotomyRequestForm	&operator=(const RobotomyRequestForm &other);
+		
+		void	execute_action()const;
+
+		class RobotisationFailed: public std::exception
+		{
+			public:
+				virtual const char *what() const throw();
+		};
+		
 };
 
 #endif
