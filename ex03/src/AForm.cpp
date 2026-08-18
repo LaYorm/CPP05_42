@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 11:12:02 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 16:02:51 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/18 12:49:10 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,15 +110,15 @@ std::ostream	&operator<<(std::ostream &o, AForm const &other)
 
 const char *AForm::GradeTooHighException::what() const throw()
 {
-	return (" Grade Too High !\n");
+	return ("Grade Too High !\n");
 }
 
 const char *AForm::GradeTooLowException::what() const throw()
 {
-	return (" Grade Too Low !\n");
+	return ("Grade Too Low !\n");
 }
 
 const char	*AForm::NotSignedException::what() const throw()
 {
-	return (" Form can't be executed because it's not signed yet !\n");
+	return ("Form can't be executed because it's not signed yet !\n");
 }

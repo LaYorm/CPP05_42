@@ -13,7 +13,7 @@ OBJ_DIR = objs/
 SRC_DIR = src/
 
 SRC_FILES = main.cpp Bureaucrat.cpp AForm.cpp PresidentialPardonForm.cpp \
-			RobotomyRequestForm.cpp ShrubberyCreationForm.cpp
+			RobotomyRequestForm.cpp ShrubberyCreationForm.cpp Intern.cpp
 
 OBJS = $(addprefix $(OBJ_DIR), $(SRC_FILES:.cpp=.o))
 
@@ -36,7 +36,7 @@ clean :
 
 fclean : clean
 			@rm -f $(NAME)
-			@rm *_shrubbery
+			@rm -f *_shrubbery
 			@printf "$(RED)[EX03] Executable $(NAME) cleaned.$(RESET)\n"
 
 re  : fclean all

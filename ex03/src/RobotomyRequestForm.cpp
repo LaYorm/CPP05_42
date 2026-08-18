@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/17 10:45:16 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 15:25:25 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/18 12:10:31 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,10 @@ RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &copy):AForm(
 
 RobotomyRequestForm	&RobotomyRequestForm::operator=(const RobotomyRequestForm &other)
 {
-	this->_target = other._target;
+	if (this != &other)
+	{
+		this->_target = other._target;
+	}
 	return (*this);
 }
 
