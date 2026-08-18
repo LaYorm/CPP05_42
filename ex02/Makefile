@@ -36,7 +36,7 @@ clean :
 
 fclean : clean
 			@rm -f $(NAME)
-			@rm *_shrubbery
+			@rm -f *_shrubbery
 			@printf "$(RED)[EX02] Executable $(NAME) cleaned.$(RESET)\n"
 
 re  : fclean all
