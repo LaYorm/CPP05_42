@@ -6,7 +6,7 @@
 /*   By: yorimek <yorimek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/17 10:45:12 by yorimek           #+#    #+#             */
-/*   Updated: 2026/08/17 15:39:45 by yorimek          ###   ########.fr       */
+/*   Updated: 2026/08/18 14:37:52 by yorimek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,10 @@ PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &cop
 
 PresidentialPardonForm	&PresidentialPardonForm::operator=(const PresidentialPardonForm &other)
 {
-	this->_target = other._target;
+	if (this != &other)
+	{
+		this->_target = other._target;
+	}
 	return (*this);
 }
 
